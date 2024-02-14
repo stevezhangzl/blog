@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-02-14 15:10:05'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">34</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/20/hev-socks5-tunnel%E5%88%86%E6%9E%90/" title="hev-socks5-tunnel分析">hev-socks5-tunnel分析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-07-20T06:01:30.000Z" title="Created 2023-07-20 14:01:30">2023-07-20</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/13/%E7%8E%8B%E9%81%93-Linux%E7%AC%AC%E4%B8%80%E5%91%A8-%E7%AC%AC5%E8%8A%82dup-%E9%87%8D%E5%AE%9A%E5%90%91%E6%A0%87%E5%87%86%E8%BE%93%E5%87%BA-%E7%AE%A1%E9%81%93%E9%80%9A%E4%BF%A1/" title="王道-Linux第一周-第5节dup-重定向标准输出-管道通信">王道-Linux第一周-第5节dup-重定向标准输出-管道通信</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-07-12T22:04:25.000Z" title="Created 2023-07-13 06:04:25">2023-07-13</time></span></div><div class="content">[TOC]
+1.文件描述符的复制
+系统调用函数dup和dup2可以实现文件描述符的复制
+dup返回一个新的文件描述符（是自动分配的，数值是没有使用文件描述符的最小编号）。这个新的描述符是旧文件描述符的拷贝。这意味着两个描述符共享同一个数据结构
+dup2允许调用者用一个有效描述符(oldfd)和目标描述符(newfd)。函数成功返回时，目标描述将变成旧描述符的复制品，此时两个文件描述符现在都指赂同一个文件，并且是函数第一个参数（也就是oldfd）指向的文件（执行完成以后，如果newfd已经打开了文件，该文件将会被关闭），原型为：
+
+123#include &lt;unistd.h&gt;int dup(int oldfd);int dup2(int oldfd,int newfd);
+
+
+如果是fd&#x3D;fd1 在此情况下，两个文件描述符变量值相同，指向同一个打开的文件，但是内核的文件打开引用计数还是1，所以close(fd)和close(fd1)都会导致文件立即关闭
+使用文件描述符的复制，情况会有所区别
+dup的原理：当使用文件的时候，为了和硬件（比如磁盘）建立联系，进程地址空间 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/11/WebRTC-%E7%AC%AC5%E7%AB%A0%E5%AE%9E%E7%8E%B0%E9%AB%98%E6%80%A7%E8%83%BD%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="WebRTC-第5章实现高性能网络服务器">WebRTC-第5章实现高性能网络服务器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-07-10T21:42:42.000Z" title="Created 2023-07-11 05:42:42">2023-07-11</time></span></div><div class="content">[toc]
+高性能网络服务器
+通过fork实现高性能网络服务器
+通过select实现高性能网络服务器
+通过epoll实现高性能网络服务器
+
+1 fork1.1 以fork方式实现高性能网络服务器
+每收到一个连接就创建一个子进程
+父进程负责接收连接
+通过fork创建子进程
+
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283#include &lt;iostream&gt;#include &lt;sys/socket.h&gt;#include &lt;netinet/in.h&gt;#include &lt;sys/types.h&gt;#include &lt;string.h&gt;#include &lt;unistd.h&gt;#define MESSAGE_LEN 1024int main(int argc,cha ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/10/WebRTC-%E7%AC%AC4%E7%AB%A0%E5%AE%9E%E7%8E%B0TCP-UDP%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="WebRTC-第4章实现TCP/UDP服务器">WebRTC-第4章实现TCP/UDP服务器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-07-09T20:39:55.000Z" title="Created 2023-07-10 04:39:55">2023-07-10</time></span></div><div class="content">[toc]
+TCP Server1.TCP Server 网络编程基本步骤
+创建socket，指定使用的TCP协议
+将socket与地址和端口绑定
+侦听端口
+创建新的socket
+使用recv接收数据
+使用send发送数据
+使用close关闭连接
+
+2.TCP常见套接字选项
+SO_REUSEADDR 端口处于WAIT_TIME仍然可以启动
+当网络服务器关闭时，它有一个TIME_WATI，这个是当使用socket的时候，谁主动发起关闭，就会有一个WAIT_TIME，等待其他用户的最终的FIN，最后的消息过来才会真正的关闭，如果使用SO_REUSEADDR 就不用等待WAIT_TIME 可以启另外一个服务，复用地址和端口
+
+
+SO_RCVBUF 接收的缓冲区大小
+SO_SNDBUF 发送的缓冲区大小
+
+3.TCP通信流程图![image-20230710044658165](&#x2F;Users&#x2F;zhanglong&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-202307100 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/30/%E7%8E%8B%E9%81%93-Linux%E7%AC%AC%E4%B8%80%E5%91%A8-%E7%AC%AC4%E8%8A%82ls-l%E7%9A%84%E5%AE%9E%E7%8E%B0-open-%E8%AF%BB%E5%86%99-ftruncate/" title="王道-Linux第一周-第4节ls-l的实现-open-读写-ftruncate">王道-Linux第一周-第4节ls-l的实现-open-读写-ftruncate</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-30T06:45:25.000Z" title="Created 2023-06-30 14:45:25">2023-06-30</time></span></div><div class="content">[toc]
+模拟ls -l命令123456789101112131415161718192021222324//ls.c#include &lt;func.h&gt;int main(int argc,char *argv[])&#123;    ARGS_CHECK(argc,2);    DIR *dir;    dir = opendir(argv[1]);    if(NULL == dir)&#123;        perror(&quot;opendir&quot;);        return -1;    &#125;    struct dirent *p;    struct stat buf;    int ret;    while((p = readdir(dir)))&#123;        ret = stat(p-&gt;d_name,&amp;buf);        printf(&quot;mode=%x %3ld %s %s %6ld %s %s\n&quot;,\           buf.st_mode,buf.st_nlink,ge ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/28/%E7%8E%8B%E9%81%93-Linux%E7%AC%AC%E4%B8%80%E5%91%A8-%E7%AC%AC3%E8%8A%82%E7%A1%AC%E9%93%BE%E6%8E%A5%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90-seekdir%E5%92%8Crewinddir%E4%BD%BF%E7%94%A8/" title="王道-Linux第一周-第3节硬链接原理解析-seekdir和rewinddir使用">王道-Linux第一周-第3节硬链接原理解析-seekdir和rewinddir使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-28T05:13:24.000Z" title="Created 2023-06-28 13:13:24">2023-06-28</time></span></div><div class="content">[toc]
+1.硬连接和软连接先看一下现象
+1.我们echo hello &gt; file里，创建一个file
+2.创建file的软连接 file1   ln -s file file1
+![image-20230628135921321](&#x2F;Users&#x2F;zhanglong&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230628135921321.png)
+引用计数没有变，还是1，这个就相当于我们使用的快捷方式，file1中存储的是file的路径，我们把file删除掉再cat file1
+![image-20230628140045598](&#x2F;Users&#x2F;zhanglong&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230628140045598.png)
+3.然后我们创建硬连接file1 ln file file1
+![image ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/26/%E7%8E%8B%E9%81%93-Linux%E7%AC%AC%E4%B8%80%E5%91%A8-%E7%AC%AC2%E8%8A%82PATH%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE-%E7%9B%AE%E5%BD%95%E6%89%93%E5%BC%80%E9%81%8D%E5%8E%86OC/" title="王道-Linux第一周-第2节PATH环境变量设置-目录打开遍历OC">王道-Linux第一周-第2节PATH环境变量设置-目录打开遍历OC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-26T05:59:27.000Z" title="Created 2023-06-26 13:59:27">2023-06-26</time></span></div><div class="content">[toc]
+1.如何修改ubuntu的PATH环境变量在~&#x2F;.bashrc中增加如下内容
+PATH&#x3D;$PATH:~&#x2F;.local&#x2F;bin
+
+查看和修改环境变量
+
+1234查看环境变量echo $PATH修改环境（系统路径）变量（只对本次生效）export PATH=$PATH:新目录
+
+2.目录2.1 目录的存储原理
+对于任何文件，为了快速定位文件在磁盘当中的位置 ，文件系统在设计的时候就需要利用专门的索引结构来管理所有的文件。索引结构的基本单位是索引结点，每个索引结点都具有固定的大小，里面存放了单个文件的位置、文件类型、权限、修改时间等等信息。文件系统将所有索引结点用数组的形式组织起来，并利用一个辅助位图来实现高效管理文件信息。
+在Linux当中，目录是一种特别的文件，它的总体大小固定。它的数据块当中把很多文件的文件名和索引结点存放在一起。因为文件的文件名大小不一，为了避免磁盘碎片和支持频繁增加修改，所以目录采用链式结构来存储来组织各种文件的信息。链式结构的结点就是direct结点，它的定义如下。可以看出，要访问下个dirent结点，实际是依赖 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/22/ToyVpn%E6%9C%8D%E5%8A%A1%E7%AB%AF%E8%A7%A3%E6%9E%90/" title="ToyVpn服务端解析">ToyVpn服务端解析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-21T21:29:54.000Z" title="Created 2023-06-22 05:29:54">2023-06-22</time></span></div><div class="content">
+有多种方法可以使用该程序。这里我们只给出一个最简单场景的示例。假设 Linux 机器有一个eth0 上的公共 IPv4 地址。请尝试以下步骤并调整必要时的参数。
+1.Enable IP forwarding   
+1echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+
+注：让路由器能执行数据报的转发操作，主机一般只能发送和接收数据报，修改这个值，可以使主机能进行数据报转发功能
+2.Pick a range of private addresses and perform NAT over eth0.
+1iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE
+
+
+iptables: 是 Linux 系统中用于配置防火墙规则的命令行工具。
+-t nat: 指定操作的表为 nat 表，该表用于处理网络地址转换（Network Address Translation，NAT）相关的规则。
+-A POSTROUTING: 表示将规则添加到 POSTROUTING 链中，POSTROUT ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/19/%E7%8E%8B%E9%81%93-Linux%E7%AC%AC%E4%B8%80%E5%91%A8-%E7%AC%AC1%E8%8A%82sprintf-chmod-getcwd-chidr/" title="王道-Linux第一周-第1节sprintf-chmod-getcwd-chidr">王道-Linux第一周-第1节sprintf-chmod-getcwd-chidr</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-18T20:13:52.000Z" title="Created 2023-06-19 04:13:52">2023-06-19</time></span></div><div class="content">[TOC]
+1.文件读写格式化读写123456789#include &lt;stdio.h&gt;int printf(const char* format,...);//相当于fprintf(stdout,format,...);int scanf(const char *format,...);int fprintf(FILE *stream,const char* format,...);int fscanf(FILE *stream,const char* format,...);int sprintf(char *str,const char *format,...);//eg:sprintf(buf,&quot;the string is;%S&quot;,str);int sscanf(char *str,const char* format,...); //把字符串的转成各种类型的变量
+
+
+
+
+fprintf 将格式化后的字符串写入到文件流stream中
+sprintf将格式化后的字符串写入到字符串str中
+
+123456789101112131415161718// ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/05/25/%E6%B1%87%E7%BC%96%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" title="汇编基础学习">汇编基础学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-05-25T01:17:11.000Z" title="Created 2023-05-25 09:17:11">2023-05-25</time></span></div><div class="content">汇编讲解1.指令格式操作码字段	地址字段
+2.理解数组与指针对应的汇编![image-20230525092422314](&#x2F;Users&#x2F;zhanglong&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230525092422314.png)
+在linux上的有部分不一致的情况  这里的eax和ax都是针对 32位操作系统的，64位的还有rax，关系如下
+![image-20230525093650273](&#x2F;Users&#x2F;zhanglong&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230525093650273.png)
+其实他们都是同一个寄存器。。。。只不过包含的范围不同， 我们经常会看到有ebp 有rbp   只是范围不同
+linux:
+
+eax   rax 一个是32位的寄存器   一个是64位的寄存器   是累加器
+ebx 基 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">34</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/22/SSL%E9%9D%9E%E9%98%BB%E5%A1%9E%E4%B8%8B%E8%AF%BB%E5%86%99%E6%8E%A5%E5%8F%A3%E8%BF%94%E5%9B%9E%E5%80%BC%E7%9A%84%E5%A4%84%E7%90%86%E9%97%AE%E9%A2%98/" title="SSL非阻塞下读写接口返回值的处理问题">SSL非阻塞下读写接口返回值的处理问题</a><time datetime="2023-10-22T01:13:31.000Z" title="Created 2023-10-22 09:13:31">2023-10-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/17/%E5%8D%9A%E5%AD%A6-Linux%E6%96%87%E4%BB%B6%E5%92%8C%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8/" title="博学-Linux文件和系统调用">博学-Linux文件和系统调用</a><time datetime="2023-10-17T07:11:45.000Z" title="Created 2023-10-17 15:11:45">2023-10-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/01/Makefile%E7%9B%B8%E5%85%B3/" title="Makefile相关">Makefile相关</a><time datetime="2023-10-01T01:48:14.000Z" title="Created 2023-10-01 09:48:14">2023-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/21/Framework%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0-8%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E7%9B%B8%E5%85%B3-5%E4%B8%BB%E7%BA%BF%E7%A8%8B%E8%BF%9B%E5%85%A5Loop%E5%BE%AA%E7%8E%AF%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B2%A1%E6%9C%89ANR/" title="Framework入门学习-8线程通信相关-5主线程进入Loop循环为什么没有ANR">Framework入门学习-8线程通信相关-5主线程进入Loop循环为什么没有ANR</a><time datetime="2023-08-21T00:39:54.000Z" title="Created 2023-08-21 08:39:54">2023-08-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/21/Framework%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0-8%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E7%9B%B8%E5%85%B3-3handler%E7%9A%84%E6%B6%88%E6%81%AF%E5%BB%B6%E6%97%B6%E6%98%AF%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84/" title="Framework入门学习-8线程通信相关-3handler的消息延时是怎么实现的">Framework入门学习-8线程通信相关-3handler的消息延时是怎么实现的</a><time datetime="2023-08-21T00:32:46.000Z" title="Created 2023-08-21 08:32:46">2023-08-21</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/Android-BAT-%E9%9D%A2%E8%AF%95/" style="font-size: 1.1em; color: #999">Android BAT 面试</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">October 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">August 2023</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">July 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">June 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">May 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">34</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-02-14T07:10:05.721Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
